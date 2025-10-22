@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revoke Consent – Who?</title>
+  <meta name="description" content="How to revoke consent for personalized ads and manage your privacy in the Who? app.">
+  <style>
+    :root{
+      --brand:#d633ff;
+      --brand-dark:#a61ccf;
+      --text:#222;
+      --muted:#555;
+      --bg:#faf7fc;
+      --card:#ffffff;
+      --border:#eee;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.6;
+    }
+    header{
+      background:linear-gradient(135deg,var(--brand),var(--brand-dark));
+      color:#fff;
+      padding:32px 16px;
+      text-align:center;
+    }
+    header h1{margin:0 0 6px;font-size:28px;font-weight:800}
+    header p{margin:0;opacity:.95}
+    main{
+      max-width:920px;
+      padding:28px 16px 48px;
+      margin:0 auto;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:24px;
+      margin:16px 0;
+      box-shadow:0 4px 16px rgba(0,0,0,.04);
+    }
+    h2{font-size:22px;margin:0 0 10px}
+    h3{font-size:18px;margin:20px 0 8px}
+    p{margin:10px 0;color:var(--muted)}
+    ul{margin:10px 0 0 22px;color:var(--muted)}
+    .actions{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:16px;
+    }
+    .btn{
+      appearance:none;
+      border:none;
+      border-radius:12px;
+      padding:12px 16px;
+      font-weight:700;
+      cursor:pointer;
+      transition:.2s transform ease,.2s box-shadow ease;
+    }
+    .btn:active{transform:translateY(1px)}
+    .btn-primary{
+      background:var(--brand);
+      color:#fff;
+      box-shadow:0 6px 16px rgba(214,51,255,.25);
+    }
+    .btn-outline{
+      background:#fff;
+      border:2px solid var(--brand);
+      color:var(--brand);
+    }
+    .note{
+      font-size:14px;
+      color:#777;
+      margin-top:6px;
+    }
+    footer{
+      text-align:center;
+      padding:28px 16px;
+      color:#888;
+    }
+    .small{font-size:14px}
+    .sep{height:1px;background:var(--border);margin:24px 0}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .pill{
+      display:inline-block;
+      font-size:12px;
+      padding:4px 10px;
+      border-radius:999px;
+      background:#f4e6ff;
+      color:#7a20a8;
+      margin-left:6px;
+      vertical-align:middle;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Revoke Consent &amp; Manage Privacy <span class="pill">Who?</span></h1>
+    <p>Control how your data is used for ads and analytics inside the app.</p>
+  </header>
+  <main>
+    <section class="card" id="about">
+      <h2>About data consent in Who?</h2>
+      <p>Who? may display personalized ads and collect limited gameplay data to improve your experience. This can include language preferences, category choices, and (where permitted) advertising identifiers for analytics and ad personalization.</p>
+      <p>You can revoke your consent at any time if you no longer wish for your data to be used for these purposes.</p>
+    </section>
+
+    <section class="card" id="effects">
+      <h2>What happens when you revoke consent</h2>
+      <ul>
+        <li>Personalized ads will be disabled (you will see generic ads only).</li>
+        <li>Analytics used to personalize content and ads will be limited.</li>
+        <li>Previously collected ad identifiers will no longer be used for personalization.</li>
+        <li>You can keep playing Who? normally, just with reduced personalization.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="howto">
+      <h2>How to revoke your consent</h2>
+      <p>You can manage or revoke your privacy and advertising choices directly inside the <strong>Who?</strong> app:</p>
+      <ol>
+        <li>Open the <strong>Who?</strong> app on your device;</li>
+        <li>Go to <strong>Profile → Delete My Account</strong>;</li>
+        <li>On that screen you will find:
+          <ul>
+            <li>Information about account deletion;</li>
+            <li>A button to <strong>Delete My Account Permanently</strong>;</li>
+            <li>And a button to <strong>Revoke Consent</strong> (stop using personal data for ads and analytics).</li>
+          </ul>
+        </li>
+      </ol>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://blackcatdeveloperhelp-commits.github.io/delete-account/">Go to Delete My Account</a>
+        <a class="btn btn-outline" href="#revoke">Scroll to Revoke Consent section</a>
+      </div>
+      <p class="note">When you tap <em>Revoke Consent</em> inside the app, your ad permissions are reset. The consent screen may appear again on the next app open so you can choose your preferences.</p>
+    </section>
+
+    <section class="card" id="revoke">
+      <h2>Revoke consent (inside the app)</h2>
+      <p>This website is informational. To actually revoke consent, open the <strong>Who?</strong> app and use the button <em>Revoke Consent</em> available under <strong>Profile → Delete My Account</strong>. That option triggers the consent form to be shown again so you can change your choice.</p>
+      <p class="small">If you are in the European Economic Area (EEA), the United Kingdom, or Switzerland, you will see the GDPR consent form. In the United States, you may see a state privacy prompt (e.g., California CCPA/CPRA). In other regions, the app will continue without extra prompts.</p>
+    </section>
+
+    <div class="sep"></div>
+
+    <section class="card" id="delete">
+      <h2>Need to delete your account and data?</h2>
+      <p>Account deletion is permanent and removes your progress, scores, purchases, preferences, and gameplay history from our servers.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://blackcatdeveloperhelp-commits.github.io/delete-account/">Delete My Account</a>
+        <a class="btn btn-outline" href="mailto:black.cat.developer.help@gmail.com">Contact support</a>
+      </div>
+    </section>
+
+    <section class="card" id="contact">
+      <h3>Contact</h3>
+      <p>Have questions about privacy or consent? Email us at <a href="mailto:black.cat.developer.help@gmail.com">black.cat.developer.help@gmail.com</a>.</p>
+    </section>
+  </main>
+  <footer>
+    © 2025 <strong>Who?</strong> — All rights reserved.
+  </footer>
+</body>
+</html>
